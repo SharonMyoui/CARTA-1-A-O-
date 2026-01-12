@@ -10,7 +10,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  min-height: 100vh;
   margin: 0;
 }
 
@@ -65,7 +65,7 @@ h2 {
   background: #f5d76e;
 }
 
-/* Estilo del link en el texto */
+/* Estilo de links en texto */
 .texto a {
   color: #d4af37;
   font-weight: bold;
@@ -73,6 +73,29 @@ h2 {
 }
 .texto a:hover {
   color: #f5d76e;
+}
+
+/* Estilo de las miniaturas del álbum */
+.album {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.album img {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  border-radius: 15px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+
+.album img:hover {
+  transform: scale(1.1);
 }
 </style>
 </head>
@@ -89,11 +112,14 @@ h2 {
     <a href="https://docs.google.com/document/d/15rJUKd5ekd_gNmJpj2yMnuRIgaVGhcBJVgOG4Ae8FD8/edit?usp=sharing" target="_blank">
       Abrir carta 💌
     </a>
-    <br><br>
-    También puedes ver nuestras fotos aquí: 
-    <a href="https://imgur.com/a/kX9qj3Q" target="_blank">
-      Álbum de fotos 💖
-    </a>
+  </div>
+
+  <!-- Álbum de fotos -->
+  <div class="album">
+    <a href="URL_DE_LA_IMAGEN_1" target="_blank"><img src="URL_DE_LA_IMAGEN_1" alt="Foto 1"></a>
+    <a href="URL_DE_LA_IMAGEN_2" target="_blank"><img src="URL_DE_LA_IMAGEN_2" alt="Foto 2"></a>
+    <a href="URL_DE_LA_IMAGEN_3" target="_blank"><img src="URL_DE_LA_IMAGEN_3" alt="Foto 3"></a>
+    <!-- Puedes añadir más imágenes repitiendo la misma estructura -->
   </div>
 
   <a href="https://docs.google.com/document/d/15rJUKd5ekd_gNmJpj2yMnuRIgaVGhcBJVgOG4Ae8FD8/edit?usp=sharing" 
